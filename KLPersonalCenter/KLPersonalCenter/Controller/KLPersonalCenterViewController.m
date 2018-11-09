@@ -9,6 +9,10 @@
 #import "KLPersonalCenterViewController.h"
 #import "KLPersonalCenterSectionHeaderView.h"
 #import "KLPersonalCenterCellModel.h"
+
+#define KLPersonBundle [NSBundle bundleForClass:[self class]]
+
+
 @interface KLPersonalCenterViewController ()<UITableViewDelegate, UITableViewDataSource>
 @end
 
@@ -71,7 +75,7 @@ static NSString *CellID = @"UITableViewCell";
 }
 
 - (instancetype)init {
-    self = [super initWithNibName:@"KLPersonalCenterViewController" bundle:[NSBundle bundleForClass:[self class]]];
+    self = [super initWithNibName:@"KLPersonalCenterViewController" bundle:KLPersonBundle];
 //    self = [[[NSBundle mainBundle] loadNibNamed:@"KLPersonalCenterViewController" owner:self options:nil] lastObject];
     if (self) {
 
