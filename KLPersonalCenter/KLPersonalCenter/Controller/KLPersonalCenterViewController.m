@@ -100,11 +100,6 @@ static NSString *CellID = @"UITableViewCell";
     self.tableView.tableFooterView = self.footerView?self.footerView:[UIView new];
     
      [self.view addSubview:self.tableView];
-    
-    NSLog(@"%@", NSStringFromCGRect(self.view.bounds));
-    NSLog(@"%@", NSStringFromCGRect(self.view.frame));
-    NSLog(@"%@", NSStringFromCGRect(self.tableView.frame));
-    NSLog(@"%@", NSStringFromCGRect(self.tableView.bounds));
 }
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
