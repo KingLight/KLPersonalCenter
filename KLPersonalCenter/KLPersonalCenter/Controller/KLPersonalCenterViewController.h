@@ -15,7 +15,7 @@
 @end
 
 @interface KLPersonalCenterViewController : UIViewController
-@property (weak, nonatomic) IBOutlet UITableView *tableView;
+@property (strong, nonatomic) UITableView *tableView;
 
 @property (weak, nonatomic) id<KLPersonalCenterViewControllerDelegate> delegata;
 

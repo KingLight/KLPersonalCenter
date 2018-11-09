@@ -20,7 +20,7 @@
     [super viewDidLoad];
     self.formFile = @"PersonalCenter.plist";
     self.separatorColor = [UIColor redColor];
-    self.customRowHeight = 100;
+    self.customRowHeight = 50;
     self.titleFont = [UIFont boldSystemFontOfSize:20];
     self.titleColor = [UIColor orangeColor];
     self.delegata = self;
@@ -29,11 +29,11 @@
     
     UIView *header = [[UIView alloc] initWithFrame:CGRectMake(0, 0, self.view.bounds.size.width, 200)];
     header.backgroundColor = [UIColor redColor];
-    self.headerView = header;
+//    self.headerView = header;
     UIView *footer = [[UIView alloc] initWithFrame:CGRectMake(0, 0, self.view.bounds.size.width, 200)];
     footer.backgroundColor = [UIColor purpleColor];
-    self.footerView = footer;
-    self.separatorInset = UIEdgeInsetsMake(0, 100, 0, 0);
+//    self.footerView = footer;
+//    self.separatorInset = UIEdgeInsetsMake(0, 100, 0, 0);
 //    self.cellSelectionStyle = UITableViewCellSelectionStyleDefault;
     
     // Do any additional setup after loading the view.

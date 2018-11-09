@@ -14,7 +14,6 @@
 		3C3F1FAB2193E4110040D7A2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C3F1FA92193E4110040D7A2 /* LaunchScreen.storyboard */; };
 		3C3F1FAE2193E4110040D7A2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C3F1FAD2193E4110040D7A2 /* main.m */; };
 		3C3F1FB82193E4B80040D7A2 /* KLPersonalCenterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C3F1FB62193E4B80040D7A2 /* KLPersonalCenterViewController.m */; };
-		3C3F1FB92193E4B80040D7A2 /* KLPersonalCenterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C3F1FB72193E4B80040D7A2 /* KLPersonalCenterViewController.xib */; };
 		3C3F1FBE2193E5930040D7A2 /* KLPersonalCenterCellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C3F1FBD2193E5930040D7A2 /* KLPersonalCenterCellModel.m */; };
 		3C3F1FC62193F98E0040D7A2 /* KLPersonalCenterSectionHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C3F1FC52193F98E0040D7A2 /* KLPersonalCenterSectionHeaderView.m */; };
 		3C3F1FCB219407170040D7A2 /* TestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C3F1FCA219407170040D7A2 /* TestViewController.m */; };
@@ -34,7 +33,6 @@
 		3C3F1FAD2193E4110040D7A2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		3C3F1FB52193E4B80040D7A2 /* KLPersonalCenterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KLPersonalCenterViewController.h; sourceTree = "<group>"; };
 		3C3F1FB62193E4B80040D7A2 /* KLPersonalCenterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KLPersonalCenterViewController.m; sourceTree = "<group>"; };
-		3C3F1FB72193E4B80040D7A2 /* KLPersonalCenterViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = KLPersonalCenterViewController.xib; sourceTree = "<group>"; };
 		3C3F1FBC2193E5930040D7A2 /* KLPersonalCenterCellModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KLPersonalCenterCellModel.h; sourceTree = "<group>"; };
 		3C3F1FBD2193E5930040D7A2 /* KLPersonalCenterCellModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KLPersonalCenterCellModel.m; sourceTree = "<group>"; };
 		3C3F1FC42193F98E0040D7A2 /* KLPersonalCenterSectionHeaderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KLPersonalCenterSectionHeaderView.h; sourceTree = "<group>"; };
@@ -106,7 +104,6 @@
 			children = (
 				3C3F1FB52193E4B80040D7A2 /* KLPersonalCenterViewController.h */,
 				3C3F1FB62193E4B80040D7A2 /* KLPersonalCenterViewController.m */,
-				3C3F1FB72193E4B80040D7A2 /* KLPersonalCenterViewController.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -188,7 +185,6 @@
 			files = (
 				3C3F1FAB2193E4110040D7A2 /* LaunchScreen.storyboard in Resources */,
 				3C3F1FA82193E4110040D7A2 /* Assets.xcassets in Resources */,
-				3C3F1FB92193E4B80040D7A2 /* KLPersonalCenterViewController.xib in Resources */,
 				3C3F1FA62193E4110040D7A2 /* Main.storyboard in Resources */,
 				3C3F1FCD219408D80040D7A2 /* PersonalCenter.plist in Resources */,
 			);
@@ -352,6 +348,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4D8DVLFNX3;
 				INFOPLIST_FILE = KLPersonalCenter/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -369,6 +366,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4D8DVLFNX3;
 				INFOPLIST_FILE = KLPersonalCenter/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

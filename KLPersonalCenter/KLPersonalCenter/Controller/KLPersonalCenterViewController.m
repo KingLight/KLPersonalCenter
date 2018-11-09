@@ -10,7 +10,7 @@
 #import "KLPersonalCenterSectionHeaderView.h"
 #import "KLPersonalCenterCellModel.h"
 
-#define KLPersonBundle [NSBundle bundleForClass:[self class]]
+
 
 
 @interface KLPersonalCenterViewController ()<UITableViewDelegate, UITableViewDataSource>
@@ -74,21 +74,22 @@ static NSString *CellID = @"UITableViewCell";
      [self.tableView setSeparatorInset:separatorInset];
 }
 
-- (instancetype)init {
-    self = [super initWithNibName:@"KLPersonalCenterViewController" bundle:KLPersonBundle];
-//    self = [[[NSBundle mainBundle] loadNibNamed:@"KLPersonalCenterViewController" owner:self options:nil] lastObject];
-    if (self) {
-
-    }
-    return self;
-}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self configTableView];
+    
+    
+    NSLog(@"%@", NSStringFromCGRect([UIApplication sharedApplication].statusBarFrame));
 }
 
 - (void)configTableView {
+    
+    self.tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, self.view.bounds.size.width, self.view.bounds.size.height) style:UITableViewStyleGrouped];
+    
+    self.tableView.delegate = self;
+    self.tableView.dataSource = self;
+   
     self.tableView.estimatedRowHeight = 0;
     self.tableView.estimatedSectionFooterHeight = 0;
     self.tableView.estimatedSectionHeaderHeight = 0;
@@ -97,6 +98,13 @@ static NSString *CellID = @"UITableViewCell";
     [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:CellID];
     [self.tableView registerClass:NSClassFromString(SectionViewID) forHeaderFooterViewReuseIdentifier:SectionViewID];
     self.tableView.tableFooterView = self.footerView?self.footerView:[UIView new];
+    
+     [self.view addSubview:self.tableView];
+    
+    NSLog(@"%@", NSStringFromCGRect(self.view.bounds));
+    NSLog(@"%@", NSStringFromCGRect(self.view.frame));
+    NSLog(@"%@", NSStringFromCGRect(self.tableView.frame));
+    NSLog(@"%@", NSStringFromCGRect(self.tableView.bounds));
 }
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
