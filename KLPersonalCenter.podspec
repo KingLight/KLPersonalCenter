@@ -2,7 +2,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "KLPersonalCenter"
-  s.version      = "0.0.3"
+  s.version      = "0.0.4"
   s.summary      = "项目中的个人中心控制器，通过传入一个plist文件，轻松构建"
 
   s.homepage     = "https://github.com/KingLight/KLPersonalCenter.git"
